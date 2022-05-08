@@ -10,7 +10,7 @@
   --first-color: #ff3867;
   --second-color: #ffc873;
   --third-color: #d37ec6;
-  --gray: #888888;
+  --grey: #888888;
 }
 
 body {
@@ -32,21 +32,23 @@ body {
   margin: auto;
   border-radius: 10px;
   box-shadow: inset 0em 0em 1em #888888;
+  display: flex;
+  flex-direction: column;
 }
 .cardHeader {
   height: 150px;
   border-bottom: 5px solid var(--first-color);
 }
 .cardMain {
-  height: 400px;
+  /*height: 400px;*/
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  flex: 1 1 auto;
 }
 .cardFooter {
-  height: 50px;
-  border-top: 1px solid var(--gray);
+  border-top: 1px solid var(--grey);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -66,12 +68,22 @@ body {
 .post,
 .following,
 .followers {
-  margin: auto;
+  font-family: "Montserrat", sans-serif;
+  color: var (--grey);
+  padding-top: 2em;
+  padding-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .post {
 }
 .followers {
+  border-left: 1px solid var(--grey);
+  border-right: 1px solid var(--grey);
 }
 .following {
 }
