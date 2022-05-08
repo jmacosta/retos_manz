@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+:root {
+  --first-color: #ff3867;
+  --second-color: #ffc873;
+  --third-color: #d37ec6;
+  --gray: #888888;
+}
+
+body {
+  background: linear-gradient(
+    var(--first-color),
+    var(--second-color),
+    var(--third-color)
+  );
+  background-repeat: no-repeat;
+  display: flex;
+  height: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.card {
+  width: 450px;
+  height: 600px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: inset 0em 0em 1em #888888;
+}
+.cardHeader {
+  height: 150px;
+  border-bottom: 5px solid var(--first-color);
+}
+.cardMain {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.cardFooter {
+  height: 50px;
+  border-top: 1px solid var(--gray);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nick {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin-top: 2em;
+}
+.description {
+  font-family: "Montserrat", sans-serif;
+  margin: 2em;
+}
+
+.post,
+.following,
+.followers {
+  margin: auto;
+}
+
+.post {
+}
+.followers {
+}
+.following {
+}
